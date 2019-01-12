@@ -2,6 +2,16 @@
 #alert {
   color: red;
 }
+
 h1 {
   font-family: Permanent Marker;
+}
+
+h2 {
+  font-family: Timmana;
+}
+
+.output {
+  font-family: Libre Baskerville;
+  font-size: 125%;
 }
