@@ -3,10 +3,10 @@ import { Quote } from '../quote'
 
 @Component({
   selector: 'app-quote',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  templateUrl: './quote.component.html',
+  styleUrls: ['./quote.component.css']
 })
-export class AppComponent implements OnInit {
+export class QuoteComponent implements OnInit {
   quotes = [
     new Quote(1, 'Treat me like a joke and I will leave you like it is funny', 'By Chelsea Lydia'),
     new Quote(2, 'I am not wierd I am limited edition', 'By Abby'),
@@ -18,8 +18,12 @@ export class AppComponent implements OnInit {
 
 
   ]
-  constructor() { }
 
+  toogleDetails(index) {
+    this.quotes[index].showDescription = !this.quotes[index].showDescription;
+  }
+
+  constructor() { }
   ngOnInit() {
   }
 
