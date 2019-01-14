@@ -1,17 +1,29 @@
-<h1>QUOTES</h1>
 <div class="container">
   <div class="row">
-    <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
-    <h2 style="font-weight: Timmana;">Here are some Quotes to think on: </h2>
-    <div class="row" *ngFor='let quote of quotes;let i = index'>
-      <div class="row">
-        <p id="{{i}}" appStrikethrough>{{quote.name}} <strong>posted on {{quote.completeDate|date|uppercase}}</strong></p>
-        <button class="btn btn-primary" (click)='toogleDetails(i)'>Details</button>
-      </div>
-      <div class="row" *ngIf="quote.showDescription">
-        <app-quote-details [quote]='quote' (isComplete)='deleteQuote($event,i)'></app-quote-details>
+    <div class="col-md-10">
+
+      <h1 id="h1">QUOTES</h1>
+      <div class="container">
+        <div class="row">
+          <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
+
+          <div class="row" *ngFor='let quote of quotes;let i = index'>
+            <div class="row">
+              <ul>
+                <li id="{{i}}">{{quote.name}} <br><strong>posted on {{quote.completeDate|date|uppercase}}</strong></li>
+              </ul>
+            </div>
+            <br>
+            <div class="button">
+              <button class="btn btn-primary" (click)='toogleDetails(i)'>Details</button>
+            </div>
+            <div class="row" *ngIf="quote.showDescription">
+              <app-quote-details [quote]='quote' (isComplete)='deleteQuote($event,i)'></app-quote-details>
+            </div>
+          </div>
+
+        </div>
       </div>
     </div>
-
   </div>
 </div>
