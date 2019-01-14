@@ -19,3 +19,7 @@ h2 {
   font-family: Libre Baskerville;
   font-size: 125%;
 }
+strong{
+  text-decoration: underline;
+  color: blue;
+}
