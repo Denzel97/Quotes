@@ -1,1 +1,13 @@
-
+button {
+  margin: 1%;
+}
+#like {
+  background-color: green;
+  opacity: 0.9;
+  padding: -10px;
+}
+#unlike {
+  background-color: red;
+  opacity: 0.9;
+  padding: -10px;
+}
