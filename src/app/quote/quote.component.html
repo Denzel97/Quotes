@@ -1,7 +1,7 @@
 <h1>QUOTES</h1>
 <h2 style="font-weight: Timmana;">Here are some Quotes to think on: </h2>
 <div *ngFor='let quote of quotes;let i = index'>
-  <p>{{quote.name}}</p>
-  <button  (click)='toogleDetails(i)'>Toogle Details</button>
-  <app-quote-details *ngIf="quote.showDescription" [quote]='quote' (isComplete)= 'completeQuote($event,i)'></app-quote-details>
+  <p id="{{i}}" appStrikethrough>{{quote.name}} due on {{quote.completeDate|date|uppercase}}</p>
+  <button (click)='toogleDetails(i)'>Toogle Details</button>
+  <app-quote-details *ngIf="quote.showDescription" [quote]='quote' (isComplete)='completeQuote($event,i)'></app-quote-details>
 </div>
