@@ -19,6 +19,12 @@ export class QuoteComponent implements OnInit {
 
   ]
 
+  completeQuote(isComplete, index) {
+    if (isComplete) {
+      this.quotes.splice(index, 1);
+    }
+  }
+
   toogleDetails(index) {
     this.quotes[index].showDescription = !this.quotes[index].showDescription;
   }
