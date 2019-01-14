@@ -1,7 +1,13 @@
 <h1>QUOTES</h1>
-<h2 style="font-weight: Timmana;">Here are some Quotes to think on: </h2>
-<div *ngFor='let quote of quotes;let i = index'>
-  <p id="{{i}}" appStrikethrough>{{quote.name}} <strong>posted on {{quote.completeDate|date|uppercase}}</strong></p>
-  <button (click)='toogleDetails(i)'>Toogle Details</button>
-  <app-quote-details *ngIf="quote.showDescription" [quote]='quote' (isComplete)='completeQuote($event,i)'></app-quote-details>
+<div class="container">
+  <h2 style="font-weight: Timmana;">Here are some Quotes to think on: </h2>
+  <div class="row" *ngFor='let quote of quotes;let i = index'>
+    <div class="row">
+      <p id="{{i}}" appStrikethrough>{{quote.name}} <strong>posted on {{quote.completeDate|date|uppercase}}</strong></p>
+      <button class="btn btn-primary" (click)='toogleDetails(i)'>Details</button>
+    </div>
+    <div class="row" *ngIf="quote.showDescription">
+      <app-quote-details [quote]='quote' (isComplete)='deleteQuote($event,i)'></app-quote-details>
+    </div>
+  </div>
 </div>

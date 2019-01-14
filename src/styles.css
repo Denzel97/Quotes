@@ -1,4 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css"
+
 #alert {
   color: red;
   text-align: center;
@@ -19,7 +21,8 @@ h2 {
   font-family: Libre Baskerville;
   font-size: 125%;
 }
-strong{
+
+strong {
   text-decoration: underline;
   color: blue;
 }
