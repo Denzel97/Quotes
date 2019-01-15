@@ -8,13 +8,13 @@ import { Quote } from '../quote'
 })
 export class QuoteComponent implements OnInit {
   quotes = [
-    new Quote(1, 'Treat me like a joke and I will leave you like it is funny', 'By Chelsea Lydia', new Date(2019, 0, 12)),
-    new Quote(2, 'I am not wierd I am limited edition', 'By Abby', new Date(2019, 0, 10)),
-    new Quote(3, 'Get up, stand up, Stand up for your rights. Get up, stand up, Don not give up the fight', 'By Bob Marley', new Date(2019, 0, 12)),
-    new Quote(4, 'Talk is cheap. Show me code', 'By June Barasa', new Date(2019, 0, 12)),
-    new Quote(5, 'Things are not always #000000 and #FFFFFF', 'By Yommie Samora', new Date(2019, 0, 12)),
-    new Quote(6, 'Eat Sleep Game Repeat', 'Benson Kimani', new Date(2019, 0, 12)),
-    new Quote(7, 'Gamers do not die they respawn', 'By Denzel Ouma', new Date(2019, 0, 12)),
+    new Quote(1, 'Treat me like a joke and I will leave you like it is funny', 'By Chelsea Lydia','Denzel Ouma', new Date(2019, 0, 12)),
+    new Quote(2, 'I am not wierd I am limited edition', 'By Abby','Denzel Ouma', new Date(2019, 0, 10)),
+    new Quote(3, 'Get up, stand up, Stand up for your rights. Get up, stand up, Don not give up the fight','Denzel Ouma', 'By Bob Marley', new Date(2019, 0, 12)),
+    new Quote(4, 'Talk is cheap. Show me code', 'By June Barasa','Denzel Ouma', new Date(2019, 0, 12)),
+    new Quote(5, 'Things are not always #000000 and #FFFFFF', 'By Yommie Samora','Denzel Ouma', new Date(2019, 0, 12)),
+    new Quote(6, 'Eat Sleep Game Repeat', 'Benson Kimani','Denzel Ouma', new Date(2019, 0, 12)),
+    new Quote(7, 'Gamers do not die they respawn', 'By Denzel Ouma','Denzel Ouma', new Date(2019, 0, 12)),
 
 
   ]
