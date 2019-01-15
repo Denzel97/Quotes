@@ -1,0 +1,13 @@
+.jumbotron {
+  background-color: white;
+  border: 1px solid rgb(176, 224, 230);
+}
+
+#description {
+  border-color: rgb(176, 224, 230);
+}
+
+#author, #publisher {
+  border-color: rgb(176, 224, 230);
+  width: 40%;
+}
