@@ -6,6 +6,7 @@ h1 {
 
 #output {
   border: 1px solid black;
+  border-color: rgb(0, 255, 255);
   border-radius: 20px;
   padding: 5%;
   margin-top: 5%;
@@ -13,7 +14,7 @@ h1 {
   margin-left: 25%;
   margin-right: 25%;
   text-align: center;
-  background-color: rgb(245,255,250);
+  background-color: rgb(0, 255, 255);
 }
 
 p {
